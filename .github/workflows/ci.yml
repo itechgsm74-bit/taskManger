@@ -1,3 +1,5 @@
+
+
 name: Deploy Angular App to GitHub Pages
 
 on:
@@ -27,12 +29,12 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href "/taskManger/"
+        run: npm run build -- --configuration production
 
       - name: Upload dist folder
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/taskManger/browser # ✅ must point to your Angular build output
+          path: dist/angular-cicd/browser # ✅ must point to your Angular build output
 
   deploy:
     environment:

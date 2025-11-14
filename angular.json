@@ -6,7 +6,7 @@
     "todolist": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "taskManger",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "todolist:build:production"
+              "buildTarget": "taskManger:build:production"
             },
             "development": {
-              "buildTarget": "todolist:build:development"
+              "buildTarget": "taskManger:build:development"
             }
           },
           "defaultConfiguration": "development"
